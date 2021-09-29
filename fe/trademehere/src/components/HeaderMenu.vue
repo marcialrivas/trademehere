@@ -9,7 +9,7 @@
       </w-toolbar>
       <w-drawer
         v-model="showDrawer"
-        left= "true"
+        v-bind:left= isLeft
         @close="showDrawer = false">
         <w-button
           class="button--close"
@@ -29,6 +29,10 @@
 export default {
   name: 'HeaderMenu',
   props: {
+    isLeft: {
+      type: Boolean,
+      default: true
+    }
   },
   data () {
     return {

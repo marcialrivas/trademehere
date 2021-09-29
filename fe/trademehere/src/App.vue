@@ -3,7 +3,9 @@
     <header>
       <header-menu/>
     </header>
-    <main class="grow">Main content</main>
+    <main class="grow">
+      <assets-table/>
+    </main>
     <footer>Footer</footer>
   </w-app>
 </template>
@@ -11,11 +13,13 @@
 <script>
 
 import HeaderMenu from '@/components/HeaderMenu'; 
+import AssetsTable from './components/AssetsTable.vue';
 
 export default {
   name: 'App',
   components: {
-    HeaderMenu
+    HeaderMenu,
+    AssetsTable
   }
 }
 </script>
